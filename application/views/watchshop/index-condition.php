@@ -1,4 +1,4 @@
-<!--? Shop Method Start-->
+  <!--? Shop Method Start-->
         <div class="shop-method-area">
             <div class="container">
                 <div class="method-wrapper">
@@ -28,3 +28,4 @@
                 </div>
             </div>
         </div>
+        <!-- Shop Method End-->

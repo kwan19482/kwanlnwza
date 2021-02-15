@@ -1,10 +1,17 @@
-<!--? Preloader Start -->
+ <!--? Preloader Start -->
+ <style type="text/css">
+     .lang a{
+         color:black;
+     }.lang a:hover{
+         color:orange;
+     }
+ </style>
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="<?php echo base_url(); ?>assets/img/logo/logo.png" alt="">
+                    <img src="<?=base_url() ?>assets/img/logo/logo.png" alt="">
                 </div>
             </div>
         </div>
@@ -18,31 +25,43 @@
                     <div class="menu-wrapper">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="<?php echo base_url(); ?>assets/img/logo/logo.png" alt=""></a>
+                            <a href="index.html"><img src="<?=base_url() ?>assets/img/logo/logo.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav>                                                
                                 <ul id="navigation">  
-                                    <li><a href="index.html"><?php echo $lang=='TH'?'หน้าแรก':'Home';?></a></li>
-                                    <li><a href="shop.html"><?php echo $lang=='TH'?'ร้านค้า':'Shop';?></a></li>
-                                    <li><a href="about.html"><?php echo $lang=='TH'?'เกี่ยวกับเรา':'About Us';?></a></li>
-                                    <li><a href="contact.html"><?php echo $lang=='TH'?'ติดต่อเรา':'Contact Us';?></a></li>
+                                    <li><a href="index.html">
+                        <?php echo lang('home'); ?>
+                                    </a></li>
+                                    <li><a href="shop.html">
+                        <?php echo lang('shop'); ?>
+                                    </a></li>
+                                    <li><a href="about.html">
+                        <?php echo lang('about'); ?>
+                                    </a></li>
+                                    <li><a href="contact.html">
+                        <?php echo lang('contact'); ?>
+                                    </a></li>
                                 </ul>
                             </nav>
                         </div>
+
                         <!-- Header Right -->
                         <div class="header-right">
                             <ul>
-                                <li>
+                                <li class="lang" >
+                                    
                                     <?php if($lang=='TH'){ ?>
-                                        <a href=""><img src="<?php echo base_url("assets/TH.png"); ?>"></a>
-                                    <?php }
-                                    else { ?>
-                                        <a href=""><img src="<?php echo base_url("assets/GB.png"); ?>"></a>
+                                        <a href="<?php echo base_url("SwitchLanguage/changeTo/EN"); ?>">
+                                        change to <img src="<?=base_url("assets/GB.png")?>">
+                                        </a>
+                                    <?php }else{ ?>
+                                        <a href="<?php echo base_url("SwitchLanguage/changeTo/TH"); ?>">
+                                        เปลี่ยนภาษา <img src="<?=base_url("assets/TH.png")?>">
                                     <?php } ?>
-                                </li> 
-
+                                    </a>
+                                </li>
                                 <li>
                                     <div class="nav-search search-switch">
                                         <span class="flaticon-search"></span>

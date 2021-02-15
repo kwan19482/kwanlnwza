@@ -1,8 +1,7 @@
-    <footer>
+<footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
-            <div class="container">
-
+            <div class="container">                
                 <!-- Footer bottom -->
                 <div class="row align-items-center">
                     <div class="col-xl-7 col-lg-8 col-md-7">
@@ -28,9 +27,6 @@
         </div>
         <!-- Footer End-->
     </footer>
-        <!-- Shop Method End-->
-    </main>
-
     <!--? Search model Begin -->
     <div class="search-model-box">
         <div class="h-100 d-flex align-items-center justify-content-center">
